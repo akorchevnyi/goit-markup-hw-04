@@ -353,7 +353,10 @@ header {
 
 }
 
-.team-social-link:hover, .team-social-link:active {
+.team-social-link:hover,
+.team-social-link:active,
+.team-social-link:focus
+{
     background-color: var(--pressed-cl);
 }
 
@@ -456,17 +459,20 @@ header {
 
 .footer-social-title {
     color: #FFFFFF;
-    font-weight: 500
+    font-weight: 500;
     margin-bottom: 16px
 }
 
 .footer-social {
     display: flex;
     flex-direction: row;
-    gap: 16px
+    gap:16px
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus,
+.footer-social-link:active
+{
     background-color: #31D0AA;
 }
 
