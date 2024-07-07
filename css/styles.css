@@ -105,7 +105,7 @@ body {
     height: 16px;
 }
 
-/*endregion*/
+/*endregion Common styles and UI*/
 
 /* region Header*/
 header {
@@ -205,7 +205,7 @@ header {
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--dark-cl);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office 1.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-name.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -345,7 +345,7 @@ header {
 
 .team-social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
     padding: 0 16px
 }
