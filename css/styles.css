@@ -101,8 +101,7 @@ body {
 }
 
 .social-icon {
-    width: 16px;
-    height: 16px;
+    fill: var(--light-cl);
 }
 
 /*endregion Common styles and UI*/
@@ -354,13 +353,13 @@ header {
 
 }
 
-.team-social-link:hover {
+.team-social-link:hover, .team-social-link:active {
     background-color: var(--pressed-cl);
 }
 
 /*endregion*/
 
-/*region portfolio*/
+/*region Portfolio*/
 .portfolio-header {
     text-transform: capitalize
 }
@@ -373,6 +372,7 @@ header {
 .portfolio-card {
     --columns: 3;
     --gap: 24px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-name {
@@ -409,11 +409,15 @@ header {
     transition: transform var(--transition);
 }
 
+.portfolio-card:hover {
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-card:hover .portfolio-overlay {
     transform: translateY(0);
 }
 
-/*endregion*/
+/*endregion Portfolio*/
 
 /*region footer*/
 .footer {
@@ -424,7 +428,11 @@ header {
 .footer-container {
     display: flex;
     justify-content: start;
-    gap: 120px;
+    align-items: baseline
+}
+
+.footer-info {
+    margin-right: 120px
 }
 
 .footer-logo {
@@ -448,6 +456,8 @@ header {
 
 .footer-social-title {
     color: #FFFFFF;
+    font-weight: 500
+    margin-bottom: 16px
 }
 
 .footer-social {
@@ -456,9 +466,8 @@ header {
     gap: 16px
 }
 
-
 .footer-social-link:hover {
     background-color: #31D0AA;
 }
 
-/*endregion*/
+/*endregion Footer*/
