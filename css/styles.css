@@ -104,11 +104,13 @@ body {
     width: 16px;
     height: 16px;
 }
+
 /*endregion*/
 
-/* region header*/
+/* region Header*/
 header {
     border-bottom: 1px solid var(--cornflower-cl);
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -167,8 +169,8 @@ header {
     height: 4px;
     width: 100%;
     left: 0;
-    bottom: 0;
-    borde-right: 2px;
+    bottom: -1px;
+    border-radius: 2px;
     background-color: var(--pressed-cl);
 }
 
@@ -196,7 +198,7 @@ header {
     gap: 40px;
 }
 
-/*endregion*/
+/*endregion Header*/
 
 /*region hero*/
 .hero {
@@ -358,6 +360,7 @@ header {
 .team-social-link:hover {
     background-color: var(--pressed-cl);
 }
+
 /*endregion*/
 
 /*region portfolio*/
@@ -460,4 +463,5 @@ header {
 .footer-social-link:hover {
     background-color: #31D0AA;
 }
+
 /*endregion*/
